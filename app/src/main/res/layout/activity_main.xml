@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="412dp"
+        android:layout_height="112dp"
+        android:background="@color/blue_300"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="206dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/application_name"
+            android:textAlignment="center"
+            android:textColor="@color/black_600"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="411dp"
+        android:layout_height="796dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/next_icon_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/mathgif"
+            android:layout_width="141dp"
+            android:layout_height="131dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mathanimation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/difficultry3"
+            android:layout_width="264dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="152dp"
+            android:text="@string/guide"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/dif_select"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:dropDownWidth="match_parent"
+            android:dropDownSelector="@android:drawable/alert_light_frame"
+            android:popupBackground="@color/white"
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/op_select"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/op_select"
+            app:layout_constraintTop_toBottomOf="@+id/difficultry" />
+
+        <TextView
+            android:id="@+id/difficultry"
+            android:layout_width="277dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="252dp"
+            android:text="@string/select_difficulty"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/op_select"
+            style="@android:style/Widget.Holo.Light.Spinner"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:dropDownWidth="match_parent"
+            android:dropDownSelector="?attr/listChoiceBackgroundIndicator"
+            android:popupBackground="@drawable/question_background"
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/operation" />
+
+        <TextView
+            android:id="@+id/operation"
+            android:layout_width="277dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="408dp"
+            android:text="@string/select_op"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="200dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="124dp"
+            android:backgroundTint="@color/yellow_600"
+            android:text="@string/start"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

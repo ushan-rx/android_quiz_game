@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <!-- Background shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="30dp" /> <!-- Adjust the radius as needed -->
+            <solid android:color="@color/black_100" />
+        </shape>
+    </item>
+
+    <!-- Shadow shape -->
+    <item android:right="1dp" android:left="1dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="30dp" /> <!-- Same radius as the background shape -->
+            <solid android:color="@color/white" /> <!-- Shadow color (adjust as needed) -->
+        </shape>
+    </item>
+
+</layer-list>
